@@ -21,6 +21,9 @@
 .sidebar{
     background: #006697;
     box-shadow: 0px 0px 5px gray;
+    position: fixed;
+    left: 0px;
+    height: 100%;
 }
 #side_nav{
     min-width: 200px;
@@ -164,17 +167,31 @@ tr td{
     text-align: center;
 }
 
-@media(max-width: 767px){
-    #side_nav{
-        margin-left: -250px;
-        position: fixed;
-        min-height: 100vh;
-        z-index: 1;
-    }
+/* studen page */
 
-    #side_nav.profile{
-        margin-left: 0;
-    }
+
+.navbar{
+    padding: 10px;
+    background: #034260;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     
-
 }
+
+#check:checked ~ .sidebar{
+    left: -200px;
+}
+#check:checked ~ .navbar img{
+    margin-left: 0px;
+}
+
+#check{
+    display: none;
+}
+
+.btn-navmenu{
+    margin-left: 200px;
+}
+
+

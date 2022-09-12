@@ -5,42 +5,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Student Dashboard</title>
 </head>
 
 <body>
+    <input type="checkbox" id="check">
+    
+
+    <div class="sidebar" id="side_nav">
+        <div class="header-menu">
+            <img src="img/deb.jpg" class="profile-image" alt="img">
+            <p>Debopryo Gosh</p>
+        </div>
+        <ul class="">
+            <li class="profile"><a href="#" class="">Profile</a></li>
+            <li class=""><a href="#" class="">Assignment</a></li>
+            <li class=""><a href="#" class="">Online Class</a></li>
+            <li class=""><a href="#" class="">Fees</a></li>
+            <li class=""><a href="#" class="">Admit Card</a></li>
+            <li class=""><a href="#" class="">Exam</a></li>
+            <li class=""><a href="#" class="">Result</a></li>
+            <li class=""><a href="#" class="">Attendance</a></li>
+            <li class=""><a href="#" class="">Libary</a></li>
+        </ul>
+        <hr class="h-color mx-2">
+    </div>
+
+    <nav class="navbar">
+        <label for="check">
+            <img class="btn-navmenu" src="img/left-arrow.png" alt="menu">
+        </label>
+        <a href="index.html"><img class="log-out d-flex" src="img/Log-out.png" alt="log out"></a>
+    </nav>
+
+    
     <div class="">
-        <div class="main-container d-flex">
-            <div class="sidebar" id="side_nav">
-                <div class="header-menu">
-                    <img src="img/deb.jpg" class="profile-image" alt="img">
-                    <p>Debopryo Gosh</p>
-                </div>
-                <ul class="list-unstyled ">
-                    <li class="profile"><a href="#" class="text-decoration-none px-3 py-2 d-block">Profile</a></li>
-                    <li class=""><a href="#" class="text-decoration-none px-3 py-2">Assignment</a></li>
-                    <li class=""><a href="#" class="text-decoration-none px-3 py-2">Online Class</a></li>
-                    <li class=""><a href="#" class="text-decoration-none px-3 py-2">Fees</a></li>
-                    <li class=""><a href="#" class="text-decoration-none px-3 py-2">Admit Card</a></li>
-                    <li class=""><a href="#" class="text-decoration-none px-3 py-2">Exam</a></li>
-                    <li class=""><a href="#" class="text-decoration-none px-3 py-2">Result</a></li>
-                    <li class=""><a href="#" class="text-decoration-none px-3 py-2">Attendance</a></li>
-                    <li class=""><a href="#" class="text-decoration-none px-3 py-2">Libary</a></li>
-                </ul>
-                <hr class="h-color mx-2">
-            </div>
+        <div class="main-container">
+            
             <div class="content">
-                <nav class="navbar navbar-expand-lg bg-light">
-                    <div class="container-fluid">
-
-                        <img class="btn-navmenu" src="img/left-arrow.png" alt="menu">
-
-                        <a href="index.html"><img class="log-out d-flex" src="img/Log-out.png" alt="log out"></a>
-                    </div>
-                </nav>
+                
 
                 <div class="content-body">
                     <form action="#" class="cntent-form">
@@ -53,7 +57,8 @@
                             </tr>
                             <tr>
                                 <th>
-                                    First Name <br><input class="not-allowed" type="text" placeholder="Debopriyo" disabled>
+                                    First Name <br><input class="not-allowed" type="text" placeholder="Debopriyo"
+                                        disabled>
                                 </th>
                                 <th>
                                     Last Name <br><input class="not-allowed" type="text" placeholder="Ghosh">
@@ -90,9 +95,9 @@
                             </tr>
                         </table>
                         <div class="btn-submit">
-                            <button type="submit" onclick="update()" >Submit</button>
+                            <button type="submit" onclick="update()">Submit</button>
                         </div>
-                      
+
                     </form>
                 </div>
 
@@ -102,9 +107,6 @@
 
     </div>
 
-
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery-3.6.1.js"></script>
     <script src="js/script.js"></script>
 </body>
 

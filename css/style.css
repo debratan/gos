@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+
+}
+.not-allowed {cursor: not-allowed;}
+
+.header-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    color: white;
+}
+
+.header-menu img{
+    border-radius: 50%;
+}
+
+.sidebar{
+    background: #006697;
+    box-shadow: 0px 0px 5px gray;
+}
+#side_nav{
+    min-width: 200px;
+    max-width: 200px;
+    transition: all 0.2s;
+}
+
+hr.h-color{
+    border: white;
+}
+
+.profile{
+    background: white;
+    border-radius: 8px 0px 0px 8px;
+}
+
+.profile a , .profile a:hover{
+    color: black;
+}
+
+.sidebar ul li{
+    padding: 8px 0px 0px 8px;
+    padding: 8px 0px 0px 8px;
+}
+
+.sidebar li a{
+    color: white;
+}
+
+.log-out,.btn-navmenu{
+    width: 20px;
+    height: 20px;
+}
+
+.content{
+    min-height: 100vh;
+    width: 100%;
+}
+
+body {
+    background-color: #dde3f1;
+}
+
+.login {
+    text-align: center;
+}
+
+.form {
+    width: 350px;
+    height: 600px;
+    background-color: #f3f3f3;
+    margin: auto;
+    margin-top: 70px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px gray;
+
+}
+
+.login-head {
+    background-color: #ffffff;
+    padding: 6px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0px 1px 8px gray;
+}
+
+.login-head h3 {
+    font-weight: bolder ;
+    color: #0e7bf9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#select-opt {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    margin-top: 50px;
+    padding: 5px;
+}
+
+form input {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 12px;
+    border: 1px solid gray;
+}
+
+.btn-login {
+    border-radius: 8px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: #0e7bf9;
+    color: white;
+    border-color: #0e7bf9;
+}
+
+.bottom-link{
+    margin-top: 50px;
+}
+.bottom-link p a{
+    margin-right: 30px;
+    text-decoration: none;
+}
+
+.bottom-link-1{
+    margin-top: 50px;
+}
+.bottom-link-1 p a{
+    text-decoration: none;
+} 
+
+#input-top{
+    margin-top: 70px;
+}
+
+.content-body{
+    margin: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px gray;
+    padding: 20px;
+}
+
+
+.profile-table{
+    margin: auto;
+}
+
+tr td{
+    padding: 50px;
+}
+
+.profile-image{
+    width: 60px;
+    height: 60px;
+
+}
+
+.btn-submit{
+    text-align: center;
+}
+
+@media(max-width: 767px){
+    #side_nav{
+        margin-left: -250px;
+        position: fixed;
+        min-height: 100vh;
+        z-index: 1;
+    }
+
+    #side_nav.profile{
+        margin-left: 0;
+    }
+    
+
+}

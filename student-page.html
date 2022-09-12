@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Student Dashboard</title>
+</head>
+
+<body>
+    <div class="">
+        <div class="main-container d-flex">
+            <div class="sidebar" id="side_nav">
+                <div class="header-menu">
+                    <img src="img/deb.jpg" class="profile-image" alt="img">
+                    <p>Debopryo Gosh</p>
+                </div>
+                <ul class="list-unstyled ">
+                    <li class="profile"><a href="#" class="text-decoration-none px-3 py-2 d-block">Profile</a></li>
+                    <li class=""><a href="#" class="text-decoration-none px-3 py-2">Assignment</a></li>
+                    <li class=""><a href="#" class="text-decoration-none px-3 py-2">Online Class</a></li>
+                    <li class=""><a href="#" class="text-decoration-none px-3 py-2">Fees</a></li>
+                    <li class=""><a href="#" class="text-decoration-none px-3 py-2">Admit Card</a></li>
+                    <li class=""><a href="#" class="text-decoration-none px-3 py-2">Exam</a></li>
+                    <li class=""><a href="#" class="text-decoration-none px-3 py-2">Result</a></li>
+                    <li class=""><a href="#" class="text-decoration-none px-3 py-2">Attendance</a></li>
+                    <li class=""><a href="#" class="text-decoration-none px-3 py-2">Libary</a></li>
+                </ul>
+                <hr class="h-color mx-2">
+            </div>
+            <div class="content">
+                <nav class="navbar navbar-expand-lg bg-light">
+                    <div class="container-fluid">
+
+                        <img class="btn-navmenu" src="img/left-arrow.png" alt="menu">
+
+                        <a href="index.html"><img class="log-out d-flex" src="img/Log-out.png" alt="log out"></a>
+                    </div>
+                </nav>
+
+                <div class="content-body">
+                    <form action="#" class="cntent-form">
+                        <table class="profile-table">
+                            <tr>
+                                <th>
+                                    <p>Profile Picture</p>
+                                </th>
+                                <th><img class="profile-image" src="img/deb.jpg" alt=""></th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    First Name <br><input class="not-allowed" type="text" placeholder="Debopriyo" disabled>
+                                </th>
+                                <th>
+                                    Last Name <br><input class="not-allowed" type="text" placeholder="Ghosh">
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Email <br><input type="email">
+                                </th>
+                                <th>
+                                    password <br><input type="password">
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Gender <br>
+                                    <select name="gender" id="">
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                        <option value="Others">Others</option>
+                                    </select>
+                                </th>
+                                <th>
+                                    Date-of-Birth <br><input type="date">
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Phone <br><input type="tel">
+                                </th>
+                                <th>
+                                    Father/Guarddian Name <br><input type="text">
+                                </th>
+                            </tr>
+                        </table>
+                        <div class="btn-submit">
+                            <button type="submit" onclick="update()" >Submit</button>
+                        </div>
+                      
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.1.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
